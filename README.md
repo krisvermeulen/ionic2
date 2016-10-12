@@ -10,9 +10,18 @@ install android studio: https://developer.android.com/studio/index.html
     $ npm install -g ionic
     $ npm install -g cordova
 
+clone repository
+
+    cd ionic2
+    npm install
+
+restore state (e.g. plugins/platforms from package.json)
+
+    ionic state restore
+    
+
 run application   
     
-    cd ionic2
     ionic serve -l
 
 add android platform
