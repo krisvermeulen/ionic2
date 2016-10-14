@@ -12,7 +12,12 @@
 <ion-content>
   <ion-list>
     <ion-item *ngFor="let fact of facts">
-      <p class="item-description">{{fact.joke}}</p>
+      <h2 class="item-description">{{fact.joke}} </h2>
+      <button ion-button icon-right (click)="speak(fact.joke)">
+        <ion-icon name="megaphone"></ion-icon>
+      </button>
     </ion-item>
+
+
   </ion-list>
 </ion-content>
