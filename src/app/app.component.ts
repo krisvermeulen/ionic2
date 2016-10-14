@@ -5,6 +5,7 @@ import { StatusBar } from 'ionic-native';
 import { UsersPage } from '../pages/users/users';
 import { ReposPage } from '../pages/repos/repos';
 import { OrganisationsPage } from '../pages/organisations/organisations';
+import { WinesPage } from '../pages/wines/wines';
 import { ChuckNorrisFactsPage } from '../pages/chuck-norris-facts/chuck-norris-facts';
 import { RandomKittyPage } from '../pages/random-kitty/random-kitty';
 
@@ -25,8 +26,7 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Users', component: UsersPage },
-      { title: 'Repos', component: ReposPage },
-      { title: 'Organisations', component: OrganisationsPage },
+      { title: 'Wines', component: WinesPage },
       { title: 'Chuck Norris Facts', component: ChuckNorrisFactsPage },
       { title: 'Random Kitty', component: RandomKittyPage }
     ];
