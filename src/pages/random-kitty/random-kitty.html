@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Random kitties
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <img [src]="kittyUrl"/>
+  <ion-spinner></ion-spinner>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons end>
+      <button ion-button color="royal">
+        Next
+        <ion-icon name="send" (click)="nextKitty()"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

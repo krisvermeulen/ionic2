@@ -14,7 +14,6 @@ export class UsersPage {
   users: User[]
 
   constructor(public navCtrl: NavController, private githubUsers: GithubUsers) {
-
     githubUsers.load().subscribe(users => {
       this.users = users;
     })

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Chuck Norris facts
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let fact of facts">
+      <p class="item-description">{{fact.joke}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
