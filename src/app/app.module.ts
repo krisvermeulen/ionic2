@@ -1,18 +1,20 @@
 import { NgModule } from '@angular/core';
 import { IonicApp, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
-import { TabsPage } from '../pages/tabs/tabs';
+import { UsersPage } from '../pages/users/users';
+import { ReposPage } from '../pages/repos/repos';
+import { OrganisationsPage } from '../pages/organisations/organisations';
+import {UserDetailsPage } from '../pages/user-details/user-details';
+
+import { GithubUsers } from '../providers/github-users';
 
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    UsersPage,
+    ReposPage,
+    OrganisationsPage,
+    UserDetailsPage
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -20,11 +22,11 @@ import { TabsPage } from '../pages/tabs/tabs';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    UsersPage,
+    ReposPage,
+    OrganisationsPage,
+    UserDetailsPage
   ],
-  providers: []
+  providers: [GithubUsers]
 })
 export class AppModule {}
