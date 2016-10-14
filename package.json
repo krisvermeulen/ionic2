@@ -45,7 +45,7 @@
   "cordovaPlatforms": [
     {
       "platform": "android",
-      "version": "",
+      "version": "16",
       "locator": "android"
     }
   ]
